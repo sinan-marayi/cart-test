@@ -6,8 +6,8 @@
             </span>
             <span class="priceSummary grid grid-cols-3 m-4 leading-loose">
               <p class="col-span-3 font-semibold ">Price summary</p>
-              <p class="col-span-2">Subtotal</p><p class="grid justify-items-end">Rs. </p>
-              <p class="col-span-2">Total</p><p class="grid justify-items-end">Rs. </p>
+              <p class="col-span-2">Subtotal</p><p class="grid justify-items-end">Rs.{{ total }} </p>
+              <p class="col-span-2">Total</p><p class="grid justify-items-end">Rs.{{ total }} </p>
             </span>
             <button class="font-semibold rounded-lg bg-pink-400 items-end h-16 m-4">checkout</button>
         </div>   
@@ -20,7 +20,14 @@
         name: "cartSummary",
         component:{
             
+        },
+        props:{
+          total:Number
+        },
+        mounted(){
+          console.log(this.total)
         }
+        
     }
 
 </script>
