@@ -5,7 +5,7 @@
             </div>
             <div class=" w-3/4 m-4 flex justify-between">
               <div class="index w-4/6 ml-1">
-                <p class="font-semibold pb-1 text-lg">strawberry chocolate cake purple</p>
+                <p class="font-semibold pb-1 text-lg">{{name}}</p>
                 <p class="text-gray-400">5 Kilograms</p>
                 <p class="text-gray-400  pb-1">Rs. {{price}}</p>
                   <div class="flex  mt-2">
@@ -30,6 +30,7 @@
 
         },
         props:{
+          name:String,
           count:Number,
           price:Number
         },

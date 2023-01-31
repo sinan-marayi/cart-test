@@ -1,7 +1,7 @@
 <template>
   <div class=" flex justify-between">
         <!-- cart -->
-       <cartComponent @increaseBy="changeCount" :count = count :price=price></cartComponent>
+       <cartComponent @increaseBy="changeCount" :name=name :count = count :price=price></cartComponent>
         <!-- cart summary -->
        <cartSummary :total=total></cartSummary>
     </div>
@@ -21,6 +21,7 @@ export default {
   },
   data(){
 return{
+  name:'strawberry chocolate cake purple',
   count:1,
   price:860,
   // total:0
